@@ -1,0 +1,116 @@
+# Ignore generated files
+target/
+reports/
+build/
+
+# Ignore IDE-specific files
+.idea/
+.project
+.classpath
+.settings
+
+# Ignore Maven-specific files
+pom.xml
+target/m2e-plugin/maven-archetype-plugin/archetype-resources/
+
+# Ignore local environment files
+.env
+.env.local
+
+# Ignore specific files or directories
+*.log
+*.swp
+*.DS_Store
+
+# Ignore any files that end in ".iml"
+*.iml
+
+# Ignore any files that start with "target"
+target/*
+
+# Ignore any files that start with "reports"
+reports/*
+
+# Ignore any files that start with "build"
+build/*
+
+# Ignore any files that start with ".idea"
+.idea/*
+
+# Ignore any files that start with ".project"
+.project/*
+
+# Ignore any files that start with ".classpath"
+.classpath/*
+
+# Ignore any files that start with ".settings"
+.settings/*
+
+# Ignore any files that start with "pom.xml"
+pom.xml/*
+
+# Ignore any files that start with "target/m2e-plugin/maven-archetype-plugin/archetype-resources/"
+target/m2e-plugin/maven-archetype-plugin/archetype-resources/*
+
+# Ignore any files that start with ".env"
+.env/*
+
+# Ignore any files that start with ".env.local"
+.env.local/*
+
+# Ignore any files that end in ".log"
+*.log/*
+
+# Ignore any files that end in ".swp"
+*.swp/*
+
+# Ignore any files that start with ".DS_Store"
+.DS_Store/*
+
+# Ignore any files that end in ".iml"
+*.iml/*
+
+# Ignore any files that start with "target"
+target/*
+
+# Ignore any files that start with "reports"
+reports/*
+
+# Ignore any files that start with "build"
+build/*
+
+# Ignore any files that start with ".idea"
+.idea/*
+
+# Ignore any files that start with ".project"
+.project/*
+
+# Ignore any files that start with ".classpath"
+.classpath/*
+
+# Ignore any files that start with ".settings"
+.settings/*
+
+# Ignore any files that start with "pom.xml"
+pom.xml/*
+
+# Ignore any files that start with "target/m2e-plugin/maven-archetype-plugin/archetype-resources/"
+target/m2e-plugin/maven-archetype-plugin/archetype-resources/*
+
+# Ignore any files that start with ".env"
+.env/*
+
+# Ignore any files that start with ".env.local"
+.env.local/*
+
+# Ignore any files that end in ".log"
+*.log/*
+
+# Ignore any files that end in ".swp"
+*.swp/*
+
+# Ignore any files that start with ".DS_Store"
+.DS_Store/*
+
+# Ignore any files that end in ".iml"
+*.iml/*
