@@ -1,7 +1,14 @@
 Feature: Is it Friday yet?
-  Everybody wants to know when it is Friday
+  Everybody wants to know when it´s Friday
 
-  Scenario: Sunday is not Friday
-    Given today is Sunday
+  Scenario Outline: Today is or is not Friday
+    Given today is "<day>"
     When I ask whether its Friday yet
-    Then I should be told "Nope"
+    Then I should be told "<answer>"
+    Examples:
+      | day            | answer |
+      | Friday         | TGIF   |
+      | Sunday         | Nope   |
+      | anything else! | Nope   |
+
+
