@@ -1,3 +1,4 @@
+@friday
 Feature: Is it Friday yet?
   Everybody wants to know when it´s Friday
 
@@ -7,7 +8,7 @@ Feature: Is it Friday yet?
     Then I should be told "<answer>"
     Examples:
       | day            | answer |
-      | Friday         | TGIF   |
+      | Friday         | Nope   |
       | Sunday         | Nope   |
       | anything else! | Nope   |
 

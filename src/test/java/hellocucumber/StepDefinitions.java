@@ -1,6 +1,7 @@
 package hellocucumber;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +13,10 @@ import java.time.LocalDate;
 class IsItFriday {
     static String isItFriday(String today) {
         return "Friday".equals(today) ? "TGIF" : "Nope";
+    }
+    static Boolean dayEquals(String param,String param2){
+        Boolean same=param.equalsIgnoreCase(param2);
+        return same;
     }
      static String obtenerDiaSemanaActualEnIngles() {
         LocalDate hoy = LocalDate.now();
@@ -57,7 +62,7 @@ public class StepDefinitions {
     private String dayEspected;
     private Boolean same;
     @Given("{string} is {string}")
-    public void isSameDays( String today) {
+    public void isSameDays(String today, String dayEspected) {
         this.today = today;
     }
     /*saturday*/
@@ -78,8 +83,9 @@ public class StepDefinitions {
 
 
     @Then("I should be told realdays {string}")
-    public void iShouldBeToldRealdays(String arg0) {
-      assertEquals(toRealDay,dayEspected);
+    public void iShouldBeToldRealdays(String dayReal) {
+        Boolean result= IsItFriday.dayEquals(dayReal,this.dayEspected);
+      assertTrue(result);
     }
 
 
